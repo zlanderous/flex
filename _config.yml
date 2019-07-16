@@ -1,6 +1,6 @@
 name: Flex
 markdown: redcarpet
-pygments: true
+highlighter: rouge
 gems:
   - jekyll-font-awesome-sass
 github_username:      rgautroncgiar
