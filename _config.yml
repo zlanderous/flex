@@ -1,3 +1,8 @@
 name: Flex
 markdown: redcarpet
 pygments: true
+gems:
+  - jekyll-font-awesome-sass
+github_username:      rgautroncgiar
+linkedin_username:    romain-gautron-56a582b0
+email:  r.gautron@cgiar.org

@@ -24,7 +24,10 @@
       <div class="sidebar" id="sidebar">
         <div class="header">
           <h1 class="title"><a href="/"><img id="logo" src="/images/logo.png"></a></h1>
-          <span class="tagline">A responsive Jekyll theme</span>
+          <span class="tagline">Reinforcement Learning <br> for smallholder farmers</span>
+        </div>
+        <div class="sideabout">
+            <a href="{{ site.baseurl }}{% link otherpages/aboutme.md %}">About the author</a> 
         </div>
         <div class="posts">
           <ul class="posts-list">
@@ -38,14 +41,17 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="footer">
+        <!-- <div class="footer">
           <span id="footer-links">
-            <a href="" class="footer-link">About</a> <span class="separator">&bull;</span>
-            <a href="" class="footer-link">Twitter</a> <span class="separator">&bull;</span>
-            <a href="" class="footer-link">GitHub</a>
+            <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/{{ site.github_username }}">
+              <i class="fa fa-github"></i>
+          </a>
           </span>
-        </div>
-      </div>
+        </div> -->
+      </div>      
 
         {{ content }}
 

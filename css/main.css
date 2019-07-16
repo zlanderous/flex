@@ -3,6 +3,12 @@
 /* Common
 /*
 /*****************************************************************************/
+:root{
+  --sidebarwidth: 14%;
+}
+:root{
+  --postwidth: calc(60%-var(--sidebarwidth))
+}
 
 * {
   margin: 0;
@@ -13,6 +19,12 @@ html, body {
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 60vw;
+  max-height: 400px;
+  height: auto;
 }
 
 body {
@@ -49,7 +61,7 @@ a:hover {
 /*
 /*****************************************************************************/
 #logo {
-  max-width: 128px;
+  max-width: 200px;
 }
 
 .posts a {
@@ -84,13 +96,15 @@ a:hover {
 .title {
   display: inline-block;
   text-align: center;
-  line-height: 25px;
+  font-size: 70px;
+  line-height: 15px;
 }
 
 .tagline {
   width: 100%;
   color: #787878;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 100;
   text-align: center;
   margin-top: 0.5em;
   display: block;
@@ -103,15 +117,28 @@ a:hover {
   padding-bottom: 1.25em;
 }
 
+
 .footer {
-  font-size: 0.95em;
+  text-decoration: none!important;
+  font-size: 2em;
   border-top: 1px solid #e7e7e7;
   padding-top: 1.25em;
   padding-bottom: 1.5em;
-  overflow: hidden;
   float: center;
   text-align: center;
 }
+
+footer:link{
+  text-decoration: none!important;
+}
+
+.sideabout {
+  font-size: 1.2em;
+  padding-top: 30px;
+  float: center;
+  text-align: center;
+}
+
 
 /*****************************************************************************/
 /*
@@ -131,6 +158,7 @@ a:hover {
 #cover-photo-container,
 #info-container {
   display: block;
+  padding-left:.6em ;
 }
 
 #info-container {
@@ -147,8 +175,10 @@ a:hover {
 
 .post {
   line-height: 24px;
-  max-width: 725px;
+  max-width: 70%; 
+  padding-left: 1em;
   clear: both;
+  overflow:auto;
 }
 
 .post h2 {
@@ -171,11 +201,13 @@ a:hover {
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .4em;
+  overflow: auto;
 }
 
+/* post font */
 .post p {
   font-family: 'Source Sans Pro', Arial, sans-serif;
-  font-size: 17px;
+  font-size: 22px;
   margin-bottom: 1.45em;
   text-align: justify;
 }
@@ -219,14 +251,17 @@ a:hover {
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   overflow-x: hidden;
+  justify-content: space-between;
 }
 
 .sidebar {
   float: left;
-  width: 14%;
-  padding-left: 11em;
-  padding-right: 2.125em;
+  width: var(--sidebarwidth);
+  padding-left: 15em;
+  padding-right: 2em;
+  padding-top: 1em;
   border-right: 1px solid #e7e7e7;
+  overflow:auto;
 }
 
 .content {
@@ -237,6 +272,7 @@ a:hover {
   text-align: center;
   padding-top: 2.5em;
   font-size: 1.1em;
+  margin-bottom: 3 em;
 }
 
 .post-link {
@@ -253,9 +289,9 @@ a:hover {
   color: #8a8a8a;
   font-family: Monaco, "Courier New", monospace;
   font-weight: 600;
-  font-size: 0.65em;
+  font-size: .9em;
   display: block;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 #sidebar-button {
@@ -282,10 +318,24 @@ a:hover {
   margin-top: 1.5em;
   margin-bottom: 1.45em;
   border-top: 1px dotted #e7e7e7;
+  margin-right: 10px;
 }
+
+/* padding between spans excluding first one */
+span ~ span {
+  padding-left: 10px;
+  }
 
 .colophon p {
   margin-top: 1.25em;
   font-size: 0.95em;
   color: #777;
+}
+
+.padding{
+  padding-top:10em;
+}
+
+#footerabout footer{
+  text-decoration: none;
 }
