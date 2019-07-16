@@ -1,5 +1,5 @@
 name: Flex
-markdown: redcarpet
+markdown: kramdown
 highlighter: rouge
 gems:
   - jekyll-font-awesome-sass
