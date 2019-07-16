@@ -6,3 +6,5 @@ gems:
 github_username:      rgautroncgiar
 linkedin_username:    romain-gautron-56a582b0
 email:  r.gautron@cgiar.org
+baseurl: /flex
+url: https://nappolini.github.io/
